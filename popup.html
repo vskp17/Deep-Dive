@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Dive</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="popup-container">
+        <h1>Deep Dive</h1>
+        <p class="description">Take a deep dive into product reviews—effortlessly..</p>
+        <button id="analyzeBtn">Analyze</button>
+        
+        <!-- Loading Spinner -->
+        <div class="spinner" id="loading" style="display: none;"></div>
+        
+        <!-- Progress Bar -->
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result"></div>
+
+        <!-- Feedback Section -->
+        <div id="feedback-section">
+            <span id="thumbs-up" title="Thumbs Up">&#128077;</span>
+            <span id="thumbs-down" title="Thumbs Down">&#128078;</span>
+        </div>
+        
+        <!-- Resizable Handle -->
+        <div class="resize-handle" id="resize-handle"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
