@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     return;
                 }
 
-                // 👇 Send reviews to Gemini via background script
                 chrome.runtime.sendMessage(
                     { type: "ANALYZE_REVIEWS_GENAI", reviews: response.reviews },
                     aiResponse => {

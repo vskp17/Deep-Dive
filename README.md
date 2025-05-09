@@ -44,7 +44,3 @@ deep-dive-extension/
 ├── manifest.json
 └── icon.png
 ```
-
-## License
-
-MIT

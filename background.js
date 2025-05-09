@@ -1,4 +1,4 @@
-importScripts('config.js'); // GEMINI_API_KEY should be defined there
+importScripts('config.js'); // GEMINI_API_KEY should be at config.js
 
 async function callGeminiAPI(prompt) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
@@ -60,6 +60,6 @@ ${combinedReviews}
         sendResponse({ analysis: "❌ Error analyzing reviews with Gemini." });
       });
 
-    return true; // Required to indicate asynchronous response
+    return true;
   }
 });
