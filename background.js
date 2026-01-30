@@ -1,4 +1,4 @@
-importScripts('config.js'); // GEMINI_API_KEY should be at config.js
+importScripts('config.js');
 
 async function callGeminiAPI(prompt) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
